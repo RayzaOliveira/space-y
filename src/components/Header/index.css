@@ -1,0 +1,35 @@
+div.container-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: absolute;
+  top: 0;
+}
+
+#menu ul {
+  padding:0px;
+  margin:0px;
+  list-style:none;
+}
+
+#menu ul li { display: inline; }
+
+#menu ul li a {
+  padding: 2px 10px;
+  display: inline-block;
+
+  /* visual do link */
+  background-color:transparent;
+  color: white;
+  text-decoration: none;
+  border-bottom:3px solid #EDEDED;
+}
+
+#menu ul li a:hover {
+  color: #6D6D6D;
+  border-bottom:3px solid #0e0d0d;
+}
+
+img.logo-img {
+  height: 26px;
+}
