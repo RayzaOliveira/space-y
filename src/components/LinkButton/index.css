@@ -1,0 +1,19 @@
+a.link-button {
+  /* background-color: burlywood; */
+  width: 100%;
+  max-width: 164px;
+  /* alinhar o texto ao centro */
+  text-align: center;
+  padding: 16px;
+  margin: 16px 0px;
+  border-style: solid;
+  border-width: 2px;
+  font-weight: 700;
+  /* tempo de trasição */
+  transition-duration: 500ms;  
+}
+
+a.link-button:hover {
+  background-color: #fff;
+  color: #000;
+}
