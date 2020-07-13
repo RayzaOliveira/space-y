@@ -1,0 +1,8 @@
+.text-title {
+  letter-spacing: 1px;
+  margin: 12px 0px;
+}
+
+h1.text-title {
+  font-size: 48px;
+}
