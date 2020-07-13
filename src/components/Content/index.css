@@ -1,0 +1,8 @@
+.section-content-default {
+  display: flex;
+  flex-direction: column;
+  max-width: 560px;
+  color:#fff;
+  /* background-color: black; */
+  padding: 8px;
+}
