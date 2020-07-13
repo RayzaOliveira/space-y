@@ -1,0 +1,32 @@
+section.default {
+  height:  80vh;
+  padding: 52px;
+  display: flex;
+  flex-direction: column;
+}
+
+section.section-1 {
+  /* background-color: #f2c6de; */
+  /* alinhando o conteudo ao fundo */
+  /* align-items: flex-end; */
+}
+
+section.default.bottom-left {
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+section.default.bottom-right {
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+section.default.center-left {
+  align-items: flex-start;
+  justify-content: center;
+}
+
+section.default.center-right {
+  align-items: flex-end;
+  justify-content: center;
+}
