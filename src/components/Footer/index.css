@@ -1,0 +1,43 @@
+footer.root-footer {
+  /* permite trabalhar com linhas e colunas */
+  display: flex;
+  /* coloca o conteúdo em linha  */
+  /* no caso de udar o column em vez de row:
+  flex-direction e justify-content ficam invertidos  */
+  flex-direction: row;
+  /* justifica o conteúdo ao centro no eixo x */
+  justify-content: center;
+  /* alinha o contúdo ao centro no eixo y */
+  align-items: center;
+  height: 100px;
+}
+
+footer.root-footer ul {
+  /* tira o estilo da lista */
+  list-style: none;
+}
+
+footer.root-footer ul li {
+  /* coloca os itens da lista um de frente ao outro  */
+  display: inline;
+
+}
+
+footer.root-footer ul li a {
+  font-size: 12px;
+  /* colocando margem lateral de 20 px */
+  margin: 0 20px;
+  /* espaço entre as letras */
+  letter-spacing: 1px;
+  transition-duration: 300ms;
+  /* ponteiro do mouse fica estilizado para link  */
+  cursor: pointer;
+  /* trasnforma texto em maiúsculo */
+  text-transform: uppercase;
+  /* transforma texto em negrito */
+  font-weight:bold;
+}
+
+footer.root-footer ul li a:hover {
+  opacity: 0.7;
+}
