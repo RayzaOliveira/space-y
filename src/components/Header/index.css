@@ -3,13 +3,30 @@ div.container-header {
   flex-direction: row;
   align-items: center;
   position: absolute;
+  /* espaço entre os elementos  */
+  /* justify-content: space-between; */
   top: 0;
+  background-color: black;
+  /* Altura */
+  height: 100px;
+  /* Largura */
+  width: 100%;
+}
+/* Foi usado o flex:1 para ocupar todo espaço do nav para empurrar o incone para direita */
+nav#menu {
+  flex: 1;
+}
+/* estilizando o icone bars */
+.container-header i {
+  margin-right: 50px;
+  cursor: pointer;
 }
 
+
 #menu ul {
-  padding:0px;
-  margin:0px;
-  list-style:none;
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
 }
 
 #menu ul li { display: inline; }
@@ -17,19 +34,55 @@ div.container-header {
 #menu ul li a {
   padding: 2px 10px;
   display: inline-block;
-
   /* visual do link */
-  background-color:transparent;
-  color: white;
+  background-color: transparent;
   text-decoration: none;
-  border-bottom:3px solid #EDEDED;
+  /* border-bottom:3px solid #EDEDED; */
 }
 
-#menu ul li a:hover {
-  color: #6D6D6D;
-  border-bottom:3px solid #0e0d0d;
+#menu ul li a span {
+  font-weight:bold;
+  text-transform: uppercase;
+  color: white;
+  font-size: 14px;  
+}
+
+#menu ul li a span:hover {
+  border-bottom: 1px solid #fff;
 }
 
 img.logo-img {
   height: 26px;
+  margin-left: 150px;
+}
+
+div.container-drawer {
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; 
+}
+
+div.container-drawer ul{
+  list-style: none;
+  width: 100%;
+}
+
+div.container-drawer ul li {
+  /* alinhar texto a direita */
+  text-align: right;
+  /* recuo interno */
+  padding: 10px 0;
+  /* border-bottom: tipoDaBorda tamanho cor; */
+  border-bottom: solid 2px #252525;
+}
+
+div.container-drawer ul li a span:hover {
+  opacity: 0.5;
+  transition-duration: 300ms;
+}
+
+div.container-drawer i {
+  cursor: pointer;
+  margin: 8px 0;
 }
