@@ -5,6 +5,7 @@ import Section from '../../components/Section'
 import Title from '../../components/Title'
 import Content from '../../components/Content'
 import Footer from '../../components/Footer'
+import Header from '../../components/Header' 
 
 import './index.css'
 
@@ -12,13 +13,15 @@ const Home = () => {
 
   return (
     <div id="page-home">
+
+      <Header/>
+
       {/* exportando para componets/Section: o id da sessão e cor do fundo */}
 
       {/* <section className="section-1 default" > */}
-      <Section id="1" alignment="bottom-left" color="#f2c6de">
+      <Section id="1" alignment="bottom-left" color="#212529">
 
-      
-        {/* Componetizado para Content
+      {/* Componetizado para Content
         
         <div className="content-left"> */}
         <Content>
@@ -52,7 +55,7 @@ const Home = () => {
       {/* </section> */}
       </Section>
 
-      <Section id="2" alignment="bottom-right" color="#dbcdf0">
+      <Section id="2" alignment="bottom-right" color="#343a40">
         
         <Content>
 
@@ -65,7 +68,7 @@ const Home = () => {
         </Content>
       </Section>
 
-      <Section id="3" alignment="bottom-left" color="#c6def1">
+      <Section id="3" alignment="bottom-left" color="#495057">
         <Content>
 
           <Title>RETURNING HUMAN SPACEFLIGHT TO THE UNITED STATES</Title>
@@ -77,7 +80,7 @@ const Home = () => {
         </Content>
       </Section>
 
-      <Section id="4" alignment="center-left" color="#c9e4de">
+      <Section id="4" alignment="center-left" color="#6c757d">
         <Content>
 
           <Title>CREW DRAGON DOCKING SIMULATOR</Title>
@@ -94,7 +97,7 @@ const Home = () => {
         </Content>
       </Section>
 
-      <Section id="5" alignment="center-right" color="#faedcb">
+      <Section id="5" alignment="center-right" color="#adb5bd">
         <Content>
 
           <Title tag="h4">05/01/20</Title>
