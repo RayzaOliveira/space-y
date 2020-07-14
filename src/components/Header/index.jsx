@@ -86,8 +86,8 @@ const Header = () => {
 			<Drawer anchor="right" open={state} onClose={toggleDrawer(false)}>
         <div className={classes.drawer}>
 					<div className="container-drawer">
-						{/* botão do x */}
-						<i className="fa fa-times"/>
+						{/* botão do x, onClick={toggleDrawer(false)}: para fechar o drawer */}
+						<i onClick={toggleDrawer(false)} className="fa fa-times"/>
 						<ul>
 							<li>
 								<a href="#">
