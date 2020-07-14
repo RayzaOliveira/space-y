@@ -12,10 +12,30 @@ const Footer = () => {
       <ul>
         {/* target="_blank": utilizado para encaminhar link para nova aba 
         rel="noopener noreferrer": propriedade necessária quando se utiliza o a propriedade: target="_blank"*/}
-        <li><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/rayza-oliveira-costa-482658129/">LinkedIn</a></li>
-        <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/rayzaoliveira">GitHub</a></li>
-        <li><a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/oliveirarayza/">Instagram</a></li>
-        <li><a target="_blank" rel="noopener noreferrer" href="https://twitter.com/rayza_ocr">Twitter</a></li>
+        <li>
+          <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/rayza-oliveira-costa-482658129/">
+            <i className="fa fa-linkedin"/>
+            LinkedIn
+          </a>
+        </li>
+        <li>
+          <a target="_blank" rel="noopener noreferrer" href="https://github.com/rayzaoliveira">
+          <i className="fa fa-github"/>
+            GitHub
+          </a>
+        </li>
+        <li>
+          <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/oliveirarayza/">
+          <i className="fa fa-instagram"/>
+            Instagram
+          </a>
+        </li>
+        <li>
+          <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/rayza_ocr">
+          <i className="fa fa-twitter"/>
+            Twitter
+          </a>
+        </li>
       </ul>
     </footer>
   )

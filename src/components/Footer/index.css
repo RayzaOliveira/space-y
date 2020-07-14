@@ -25,7 +25,7 @@ footer.root-footer ul li {
 
 footer.root-footer ul li a {
   font-size: 12px;
-  /* colocando margem lateral de 20 px */
+  /* recuo externo. Colocando margem lateral de 20 px */
   margin: 0 20px;
   /* espaço entre as letras */
   letter-spacing: 1px;
@@ -36,6 +36,11 @@ footer.root-footer ul li a {
   text-transform: uppercase;
   /* transforma texto em negrito */
   font-weight:bold;
+}
+
+footer.root-footer ul li a i{
+  margin-right: 8px;
+  font-size: 18px;
 }
 
 footer.root-footer ul li a:hover {
