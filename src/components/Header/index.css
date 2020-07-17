@@ -2,26 +2,30 @@ div.container-header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  position: absolute;
+  /* deixa o header fixado */
+  position: fixed;
   /* espaço entre os elementos  */
   /* justify-content: space-between; */
   top: 0;
-  background-color: black;
+  /* background-color: black; */
   /* Altura */
   height: 100px;
   /* Largura */
   width: 100%;
+  /* sobrepoem componentes */
+  z-index: 1;
+  transition: top 0.5s;
 }
 /* Foi usado o flex:1 para ocupar todo espaço do nav para empurrar o incone para direita */
 nav#menu {
   flex: 1;
 }
+
 /* estilizando o icone bars */
 .container-header i {
   margin-right: 50px;
   cursor: pointer;
 }
-
 
 #menu ul {
   padding: 0px;
@@ -85,4 +89,20 @@ div.container-drawer ul li a span:hover {
 div.container-drawer i {
   cursor: pointer;
   margin: 8px 0;
+}
+
+/* Responsivo */
+@media only screen and (max-width: 600px) {
+  nav#menu {
+    display: none;
+  }
+
+  .container-header i {
+    position: absolute;
+    right: 8px;
+  }
+
+  img.logo-img {
+    margin-left: 50%;
+  }
 }

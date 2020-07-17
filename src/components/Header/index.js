@@ -1,13 +1,29 @@
+// ordem de importação: bibliotecas, componentes da aplicação, funções, constantes e arquivos estáticos(imagem, pdf..)
+
 import React from 'react'
-import imgLogo from '../../assets/images/logo-white.png'
+import { Link } from 'react-router-dom'
 
 // lib para estilização do material-ui, neste caso o drawer
-import { makeStyles, Container } from '@material-ui/core'
+import { makeStyles } from '@material-ui/core'
 import Drawer from "@material-ui/core/Drawer";
 
+import imgLogo from '../../assets/images/logo-white.png'
 import './index.css'
 //Estrutura de JSX
 const Header = () => {
+
+	// esconde o header no evento de onScroll
+	var prevScrollpos = window.pageYOffset;
+	window.onscroll = function() {
+	var currentScrollPos = window.pageYOffset;
+		if (prevScrollpos > currentScrollPos) {
+			document.getElementById("navbar").style.top = "0";
+			document.getElementById("navbar").style.backgroundColor = "#000";
+		} else {
+			document.getElementById("navbar").style.top = "-100px";
+		}
+		prevScrollpos = currentScrollPos;
+	}
 		 
 	const classes = useStyles()
 	// Define se o drawer está aberto ou fechado    
@@ -28,54 +44,55 @@ const Header = () => {
 	return (
 
 		// div: é o Header inteiro 
-		<div className="container-header">
+		<div id="navbar" className="container-header">
 			{/* foi colocado <a href="/"> para colocar o <img> em uma rota */}
-			<a href="/"><img className="logo-img" src={imgLogo} /></a>
+			{/* <a href>: foi trocado pelo <Limk to>*/}
+			<Link to="/"><img className="logo-img" src={imgLogo} /></Link>
 			{/* tag <nav>: usado para navegação */}
 			<nav id="menu">
 				<ul>
 					<li>
-						<a href="#">
+						<Link to="#">
 							{/* <span>:para o texto, usado para que a borda inferior fique so no texto */}
 							<span>
 							Falcon 9
 							</span>
-						</a>
+						</Link>
 					</li>
 					<li>
-						<a href="#">
+						<Link to="#">
 							<span>
 							Falcon Heavy
 							</span>
-						</a>
+						</Link>
 					</li>
 					<li>
-						<a href="#">
+						<Link to="#">
 							<span>
 							Dragon
 							</span>
-						</a>
+						</Link>
 					</li>
 					<li>
-						<a href="#">
+						<Link to="#">
 							<span>
 							Starship
 							</span>
-						</a>
+						</Link>
 					</li>
 					<li>
-						<a href="#">
+						<Link to="/page-model">
 							<span>
 							Human Spaceflight
 							</span>
-						</a>
+						</Link>
 					</li>
 					<li>
-						<a href="#">
+						<Link to="#">
 							<span>
 							Rideshare
 							</span>
-						</a>
+						</Link>
 					</li>
 				</ul>
 			</nav>	
@@ -90,39 +107,39 @@ const Header = () => {
 						<i onClick={toggleDrawer(false)} className="fa fa-times"/>
 						<ul>
 							<li>
-								<a href="#">
+								<Link to="#">
 									<span>
 										MISSION
 									</span>
-								</a>
+								</Link>
 							</li>
 							<li>
-								<a href="#">
+								<Link to="#">
 									<span>
 										LAUNCHES
 									</span>
-								</a>
+								</Link>
 							</li>
 							<li>
-								<a href="#">
+								<Link to="#">
 									<span>
 										CAREERS
 									</span>
-								</a>
+								</Link>
 							</li>
 							<li>
-								<a href="#">
+								<Link to="#">
 									<span>
 										UPDATES
 									</span>
-								</a>
+								</Link>
 							</li>
 							<li>
-								<a href="#">
+								<Link to="#">
 									<span>
 										SHOP
 									</span>
-								</a>
+								</Link>
 							</li>
 						</ul>
 					</div>
