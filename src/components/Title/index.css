@@ -1,8 +1,25 @@
 .text-title {
   letter-spacing: 1px;
   margin: 12px 0px;
+  font-weight: 400;
 }
 
 h1.text-title {
   font-size: 48px;
+  font-weight: 600;
+}
+
+.text-title.big {
+  font-size: 90px;
+}
+
+/* Responsivo */
+@media only screen and (max-width: 600px) {
+  .text-title.big {
+    font-size: 48px;
+  }
+
+  h1.text-title {
+    font-size: 32px;
+  }
 }
