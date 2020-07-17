@@ -1,8 +1,14 @@
 section.default {
-  height:  80vh;
+  height: 87vh;
   padding: 52px;
   display: flex;
   flex-direction: column;
+  background-repeat: round;
+  position: relative;
+}
+
+section.background-less{
+  height: auto;
 }
 
 section.section-1 {
@@ -29,4 +35,26 @@ section.default.center-left {
 section.default.center-right {
   align-items: flex-end;
   justify-content: center;
+}
+
+section.default.center {
+  align-items: center;
+  justify-content: center;
+}
+
+/* Responsivo */
+@media only screen and (max-width: 600px) {
+  section.default {
+    padding: 16px;
+    background-repeat: no-repeat;
+    /* background-repeat-x: no-repeat; */
+    /* background-position-y: bottom; */
+    background-position-x: center;
+    background-position-y: bottom;
+  }
+
+  section.section-1 {
+    background-position-x: right;
+    background-position-y: bottom;
+  }
 }
