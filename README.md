@@ -23,7 +23,7 @@
  
 ## :bookmark: Sobre
  
-O <strong>SpaceY</strong> é um clone da aplicação Web SpaceX, que mostra alguns projestos, simulaçoes e missões espaciais.
+O <strong>SpaceY</strong> é um clone da aplicação Web SpaceX, que mostra alguns projestos, simulações e missões espaciais.
 
 <a id="tecnologias-utilizadas"></a>
 
@@ -41,9 +41,7 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias
 - O site está disponível aqui **[SpaceY](https://clone-spacey.netlify.app/)**;
 
 <h1 align="center">
-	<video autoplay loop>
-		<source src="https://i.imgur.com/eXTZUGe.mp4" type="video/mp4" />
-	</video>
+	<img src="https://github.com/RayzaOliveira/space-y/blob/master/assets/apresenta%C3%A7%C3%A3o-web.gif?raw=true" alt="Apresentacao em video" />
 </h1>
 
 <a id="como-usar"></a>
