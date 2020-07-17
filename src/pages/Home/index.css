@@ -74,3 +74,11 @@ div#page-home section div.content-left a:hover {
   background-color: #fff;
   color: #000;
 } */
+
+div#page-home section video.video-simulator {
+  /* posiciona o componete de forma absoluta em relação ao seu pai com position:relative */
+  position: absolute;
+  z-index: -1;
+  right: 8vw;
+  margin: 5vw;
+}
