@@ -38,11 +38,22 @@ footer.root-footer ul li a {
   font-weight:bold;
 }
 
-footer.root-footer ul li a i{
+footer.root-footer ul li a i {
   margin-right: 8px;
   font-size: 18px;
 }
 
 footer.root-footer ul li a:hover {
   opacity: 0.7;
+}
+
+/* Responsivo */
+@media only screen and (max-width: 600px) {
+  footer.root-footer ul li a span {
+    display: none;
+  }
+
+  footer.root-footer ul li a i {
+    font-size: 24px;
+  }
 }
