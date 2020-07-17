@@ -47,7 +47,7 @@ const Header = () => {
 		<div id="navbar" className="container-header">
 			{/* foi colocado <a href="/"> para colocar o <img> em uma rota */}
 			{/* <a href>: foi trocado pelo <Limk to>*/}
-			<Link to="/"><img className="logo-img" src={imgLogo} /></Link>
+			<Link to="/"><img className="logo-img" alt="Logo" src={imgLogo} /></Link>
 			{/* tag <nav>: usado para navegação */}
 			<nav id="menu">
 				<ul>
