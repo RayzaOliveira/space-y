@@ -5,4 +5,11 @@
   color:#fff;
   /* background-color: black; */
   padding: 8px;
+  align-items: flex-start;
+}
+
+.section-content-default.center {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }

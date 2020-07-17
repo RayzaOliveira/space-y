@@ -2,10 +2,11 @@ import React from 'react'
 
 import './index.css'
 
-const Content = ({ children }) => {
+const Content = ({ children, center }) => {
 
   return (
-    <div className="section-content-default">
+    <div 
+      className={`section-content-default ${center ?'center':''}`}>
       {children}
     </div>
   )
