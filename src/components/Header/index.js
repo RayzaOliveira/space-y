@@ -54,44 +54,32 @@ const Header = () => {
 					<li>
 						<Link to="#">
 							{/* <span>:para o texto, usado para que a borda inferior fique so no texto */}
-							<span>
-							Falcon 9
-							</span>
+							<span>Falcon 9</span>
 						</Link>
 					</li>
 					<li>
 						<Link to="#">
-							<span>
-							Falcon Heavy
-							</span>
+							<span>Falcon Heavy</span>
 						</Link>
 					</li>
 					<li>
 						<Link to="#">
-							<span>
-							Dragon
-							</span>
+							<span>Dragon</span>
 						</Link>
 					</li>
 					<li>
 						<Link to="#">
-							<span>
-							Starship
-							</span>
+							<span>Starship</span>
 						</Link>
 					</li>
 					<li>
 						<Link to="/page-model">
-							<span>
-							Human Spaceflight
-							</span>
+							<span>Human Spaceflight</span>
 						</Link>
 					</li>
 					<li>
 						<Link to="#">
-							<span>
-							Rideshare
-							</span>
+							<span>Rideshare</span>
 						</Link>
 					</li>
 				</ul>
@@ -108,37 +96,27 @@ const Header = () => {
 						<ul>
 							<li>
 								<Link to="#">
-									<span>
-										MISSION
-									</span>
+									<span>MISSION</span>
 								</Link>
 							</li>
 							<li>
 								<Link to="#">
-									<span>
-										LAUNCHES
-									</span>
+									<span>LAUNCHES</span>
 								</Link>
 							</li>
 							<li>
 								<Link to="#">
-									<span>
-										CAREERS
-									</span>
+									<span>CAREERS</span>
 								</Link>
 							</li>
 							<li>
 								<Link to="#">
-									<span>
-										UPDATES
-									</span>
+									<span>UPDATES</span>
 								</Link>
 							</li>
 							<li>
 								<Link to="#">
-									<span>
-										SHOP
-									</span>
+									<span>SHOP</span>
 								</Link>
 							</li>
 						</ul>
