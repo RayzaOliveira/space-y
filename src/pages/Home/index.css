@@ -78,7 +78,11 @@ div#page-home section div.content-left a:hover {
 div#page-home section video.video-simulator {
   /* posiciona o componete de forma absoluta em relação ao seu pai com position:relative */
   position: absolute;
-  z-index: -1;
+  z-index: 1;
   right: 8vw;
   margin: 5vw;
+}
+
+div#page-home .section-video .section-content-default  {
+  z-index: 2;
 }

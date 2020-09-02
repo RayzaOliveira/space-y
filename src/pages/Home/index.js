@@ -84,7 +84,7 @@ const Home = () => {
         </Content>
       </Section>
 
-      <Section id="4" alignment="center-left">
+      <Section id="video" alignment="center-left">
         <Content>
 
           <Title>CREW DRAGON DOCKING SIMULATOR</Title>
@@ -101,7 +101,7 @@ const Home = () => {
         </Content>
 
         <video className="video-simulator" width="50%" autoPlay loop muted>
-          <source src="https://www.spacex.com/media/iss_docking_sim.mp4" type="video/mp4" />
+          <source src="https://firebasestorage.googleapis.com/v0/b/resume-7d906.appspot.com/o/iss_docking_sim.mp4?alt=media&token=04526f2e-df2c-44b4-b467-92b37ce16ddf" type="video/mp4" />
           Your browser does not support HTML video.
         </video>
 
